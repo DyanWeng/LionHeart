@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{margin:0 0;padding:0 0;font:normal normal 18px Microsoft YaHei;}
+img{width:auto;height:auto;}
+
+.outline{width:100%;height:auto;float:left;}
+.outblock{width:1920px;height:auto;display:block;margin:0 auto;}
+.outarea{width:1200px;height:auto;display:block;margin:0 auto;}
+
+.nav-bar-out{width:100%;height:60px;display:block;position:fixed;top:0px;line-height:60px;background:rgba(0,0,0,0.5);}
+.nav-bar{width:1880px;height:auto;display:block;margin:0 auto;text-align: right;padding-right:40px}
+.nav-bar>a{width:auto;height:auto;margin-left:40px;text-decoration:none;color:rgba(255,255,255,0.5);}
+.nav-bar>a:nth-child(1){margin-left:0px}
+.nav-bar>a:hover{color:rgba(255,255,255,1);}
+.nav-bar>a:Click{color:rgba(255,255,255,1);}
+.nav-bar>a.Click{color:rgba(255,255,255,1);}
+
+.main-banner-block{width:100%;height:100vh;background:url("../img/banner-bg.png") repeat-x;background-position:center;}
+.main-banner-logo{width:100%;height:372px;position:relative;transform:translateY(-50%);top:50%;}
+.main-banner-logo>img{width:836px;height:auto;display:block;margin:0 auto;}
+.main-banner-drop{width:100%;height:70px;float:left;position:absolute;bottom:40px;}
+.main-banner-drop>img{width:70px;height:70px;display:block;margin:0 auto;}
+
+.intro-bg{width:100%;height:730px;float:left;background:url("../img/intro-bg.png") no-repeat;background-position:center;}
+.main-tittle{width:100%;height:158px;float:left;margin-top:120px;}
+.main-tittle>img{width:auto;height:158px;display:block;margin:0 auto;}
+.intro-word{width:100%;height:auto;float:left; margin-top:100px;color:#333333;font-size:30px;text-align:center;}
+
+
+.spreated-banner{width:100%;height:350px;float:left;background:url("../img/spreated-banner.png") no-repeat;background-position:center;}
+.spreated-word{width:100%;height:auto;display:block;text-align:center;color:white;font-size:50px;font-family:"MSungHK";margin-top: 80px;line-height:70px;}
+.spreated-btn{width:350px;height:60px;display:block;margin:0 auto;margin-top: 35px;border-radius:10px;background:#2174da;line-height:60px;color:white;font-size:30px;text-decoration:none;text-align:center;transition:all 0.3s;}
+.spreated-btn:hover{background:#1f63b8;}
+
+
+.service-bg{width:100%;height:1080px;float:left;background:url("../img/service-bg.png") no-repeat;background-size:cover;}
+.service-items-block{width:100%;height:520px;float:left;margin-top:120px;}
+.service-items-block>div{width:100%;height:270px;float:left;margin-bottom:70px;}
+.service-items-block>div:nth-last-child(1){margin-bottom:0px;}
+.service-items-block>div>div{width:370px;height:270px;margin-right:45px;float:left;color:#333333;text-align:center;letter-spacing:1px;}
+.service-items-block>div>div:nth-child(3){margin-right:0px;}
+.service-items-block>div>div:nth-child(6){margin-right:0px;}
+.service-items-block>div>div>div{width:100%;height:auto;float:left;}
+.service-items-block>div>div>div:nth-child(3){margin-bottom:30px;}
+.service-items-icon{width:100%;height:90px;float:left;}
+.service-items-icon>img{width:auto;height:90px;display:block;margin:0 auto;}
+.service-items-tittle{font-size:20px;font-weight:bold;margin-top:20px;margin-bottom: 5px;}
+
+.conact-bg{width:100%;height:1000px;float:left;background:url("../img/conact-bg.png") no-repeat;background-size:cover;background-position:center;}
+.conact-main-block{width:100%;height:600px;float:left;margin-top: 50px;}
+.conact-main-block>div{width:850px;height:520px;display:block;margin:0 auto;background:url("../img/contact-main-block.png") no-repeat;padding:40px 10px 40px 40px;}
+.conact-main-input-block{width:550px;height:520px;float:left;}
+.conact-main-input-block>form>textarea{width:526px;height:58px;float:left;background:#1d1d1d;border:1px solid #151515;margin-bottom:25px;color:white;font-size:20px;line-height:58px;padding-left:20px;resize : none;}
+.conact-main-input-block>form>textarea.text{width:526px;height:340px;padding-top:0px;margin-bottom:0px;}
+.conact-main-info-block{width:260px;height:520px;float:right;}
+.conact-main-info-block>img{float:left;}
+.conact-main-info-word{width:100%;height:auto;float:left;color:white;font-size:16px;}
+.conact-main-info-word>img{width:30px;height:auto;float:left;}
+.conact-main-info-word>span.email{width:auto;height:20px;float:left;margin-left:7px;}
+.conact-main-info-word>span.phone{width:auto;height:27px;float:left;margin-left:7px;}
+.conact-main-info-word:nth-child(1){line-height:20px;margin:15px 0;}
+.conact-main-info-word:nth-child(2){line-height:27px;margin:13px 0;}
+.conact-main-info-btn{width:260px;height:50px;float:left; border-radius:7px;background:#2174da;color:white;font-size:25px;text-align:center;line-height:50px;transition:all 0.3s;text-decoration:none;border:none;position:absolute;margin-top:470px;margin-left: 40px;}
+.conact-main-info-btn:hover{background:#1f63b8;}
+
+.footer-bg{width:100%;height:50px;float:left;background:url("../img/footer-bg.png") repeat-x;}
+.footer-menu{width:420px;height:50px;line-height:50px;display:block;margin:0 auto;font-size:18px;}
+.footer-menu>a{margin-right:40px;text-decoration:none;color:rgba(255,255,255,0.5);}
+.footer-menu>a:hover{color:rgba(255,255,255,1);}
+.footer-menu>a:Click{color:rgba(255,255,255,1);}
+.footer-menu>a.Click{color:rgba(255,255,255,1);}
+.footer-menu>a:nth-last-child(1){margin-right:0px;}
+
+.copy-right{width:100%;height:30px;float:left;text-align:center;line-height:30px;color:#2174da;}
+
+
+
