@@ -6,12 +6,23 @@
 	
 <!--CSS開始-->
 <link rel="stylesheet" href="css/style.css" class="css">
+<link rel="stylesheet" href="css/animate.css" class="css">
+<style type="text/css" id="parrottalks-notetaker-style">      html > body.evernote_clearly__before_visible #parrottalks-notetaker > iframe,      html > body.clearlyBeforeVisible #parrottalks-notetaker > iframe:not(#evernoteGlobalTools):not(#evernoteOptionsPage):not(#evernoteClearlyArticle) {        visibility: visible !important;      }      .evernote_clearly__before_visible #evernote_clearly__reformat,      .clearlyBeforeVisible #evernoteClearlyArticle {        z-index: 2147483646 !important;      }    </style>
+<style>
+body { overflow-x: hidden; font-family: "Microsoft Yahei";}
+.dowebok { margin: 0 auto;}
+.dowebok ul { list-style-type: none;}
+.dowebok .row { text-align: center;}
+.dowebok .logo { display: inline-block; width:836px; height: 372px; margin:0 auto; vertical-align: top; *display: inline; zoom: 1;}
+.dowebok .word { display: inline-block; width:100%; height:auto; margin:0 auto; vertical-align: top; *display: inline; zoom: 1;}
+</style>
 <!--CSS結束-->
 	
-<!--JS開始-->
+<!--JS跳至指定ID開始-->
 <script type="text/javascript" src="js/jquery-1.6.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/001.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
   $("#home-btn,#menu-home").click(function(){
@@ -32,8 +43,10 @@ $(document).ready(function(){
   });
 });
 </script>
+<!--JS跳至指定ID結束-->
 
-<!--JS結束-->
+
+
 </head>
 
 <body>
@@ -50,11 +63,19 @@ $(document).ready(function(){
 	<a href="javascript:void(0)" id="menu-conact">conact</a>
 	</div>
 </div>
+
 <div class="main-banner-block">
-	<div class="main-banner-logo"><img src="img/banner-logo.png" width="836" height="372" alt=""/></div>
+	<div class="main-banner-logo">
+	<div class="dowebok">
+		<div class="row">
+			<div class="logo bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;"><img src="img/banner-logo.png" width="836" height="372" alt=""/></div>
+		</div>
+	</div>
+	</div>
 	
 	<a href="javascript:void(0)" class="main-banner-drop" id="drop-down"><img src="img/banner-drop-icon.png" width="70" height="70" alt=""/></a>
 </div>
+
 </div>
 <!--Banner結束-->
 	
@@ -62,19 +83,42 @@ $(document).ready(function(){
 <div class="outline" id="intro">
 	<div class="intro-bg">
 		<div class="outarea">
-			<div class="main-tittle"><img src="img/intro-tittle.png" width="421" height="158" alt=""/></div>
-			<div class="intro-word">獅子心懷有自由自在的靈魂乘風破浪，秉持海納百川大無畏精神<br>探索並壯大內心，不畏懼面對任何問題<p>在這設計藍海中，如綠野仙蹤裡膽小獅般，尋找需偌大勇氣與承擔面對</p><p>獅子初心&nbsp;&nbsp;&nbsp;&nbsp;無所畏懼</p></div>
+			<div class="main-tittle">
+				<div class="dowebok">
+				<div class="row">
+					<div class="intro-tittle bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;animation-delay:1.5s;">
+					<img src="img/intro-tittle.png" width="421" height="158" alt=""/>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="dowebok">
+				<div class="row">
+					<div class="word bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;animation-delay:1.5s;">
+					<div class="intro-word">獅子心懷有自由自在的靈魂乘風破浪，秉持海納百川大無畏精神<br>探索並壯大內心，不畏懼面對任何問題<p>在這設計藍海中，如綠野仙蹤裡膽小獅般，尋找需偌大勇氣與承擔面對</p><p>獅子初心&nbsp;&nbsp;&nbsp;&nbsp;無所畏懼</p></div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 </div>
 <!--介紹 結束-->
 	
-<!--中間廣告開始-->
+<!--中間廣告開始-->	
 <div class="outline">
 	<div class="spreated-banner">
 		<div class="outarea">
-			<div class="spreated-word">Looking For Someone to Help You ?<br>Try to Conact us</div>
-			<a class="spreated-btn" href="javascript:void(0)" id="ad-btn">Contact Us</a>
+			<div class="dowebok">
+				<div class="row">
+					<div class="word bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:1.5s;">
+					<div class="spreated-word">Looking For Someone to Help You ?<br>Try to Conact us</div>
+					</div>
+					<div class="wow bounceInDown bg-purple animated" style="visibility: visible; animation-name: bounceInDown;animation-delay: 2s;"><a class="spreated-btn" href="javascript:void(0)" id="ad-btn">Contact Us</a></div>
+				</div>
+			</div>
+			
+			
 		</div>
 	</div>	
 </div>
@@ -84,42 +128,50 @@ $(document).ready(function(){
 <div class="outline" id="service">
 	<div class="service-bg">
 		<div class="outarea">
-			<div class="main-tittle"><img src="img/service-tittle.png" width="857" height="158" alt=""/></div>
+			<div class="main-tittle">
+				<div class="dowebok">
+				<div class="row">
+					<div class="bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;animation-delay:3s;">
+					<img src="img/service-tittle.png" width="857" height="158" alt=""/>
+					</div>
+				</div>
+				</div>
+			</div>
 		  <div class="service-items-block">
-			<div>
-				<div>
+			<div class="dowebok">
+				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:3.5s;">
 					<div class="service-items-icon"><img src="img/service-graphic-icon.png" width="89" height="90" alt=""/></div>
 					<div class="service-items-tittle">平面設計</div>
 					<div>Graphic Design</div>
 					<div>CIS企劃書、平面廣告、包裝設計<br>宣傳製作物、繪圖插畫</div>
 				</div>
-				<div>
+				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:3.7s;">
 					<div class="service-items-icon"><img src="img/service-web-icon.png" width="82" height="90" alt=""/></div>
 					<div class="service-items-tittle">網頁設計</div>
 					<div>Website Design</div>
 					<div>視覺設計、前端程式、特效刻寫<br>RWD網頁設計、串接資料、SEO設計<br>後端功能手刻、後台建置、網站建置配置</div>
 				</div>
-				<div>
+				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:3.9s;">
 					<div class="service-items-icon"><img src="img/service-uiux-icon.png" width="74" height="90" alt=""/></div>
 					<div class="service-items-tittle">UI/UX設計</div>
 					<div>UI/UX Design</div>
 					<div>GUI/UX設計、Flow流程<br>Wirefram展示、Prototype展示</div>
 				</div>
 			</div>
-			<div>
-				<div>
+			<div class="dowebok">
+				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:4.1s;">
 					<div class="service-items-icon"><img src="img/service-market-icon.png" width="87" height="90" alt=""/></div>
 					<div class="service-items-tittle">行銷宣傳</div>
 					<div>Marketing Publicity</div>
 					<div>網路宣傳、臉書粉絲團<br>公關宣傳、活動策劃、品牌經營</div>
 				</div>
-				<div>
+				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:4.3s;">
 					<div class="service-items-icon"><img src="img/service-video-icon.png" width="83" height="90" alt=""/></div>
 					<div class="service-items-tittle">影片後製</div>
 					<div>Video Effect</div>
 					<div>影片剪接、影片後製、開頭動畫製作<br>字幕特效、腳本發想</div>
 				</div>
-				<div>
+				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:4.5s;">
 					<div class="service-items-icon"><img src="img/service-project-icon.png" width="76" height="90" alt=""/></div>
 					<div class="service-items-tittle">專案規劃</div>
 					<div>Project Planning</div>
@@ -194,6 +246,14 @@ $(document).ready(function(){
 
 </div>
 <!--Out結束-->
-	
+
+<!--JS滾動後開始特效開始-->
+<script src="dist/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+<!--JS滾動後開始特效開始-->
 </body>
 </html>
