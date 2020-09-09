@@ -1,198 +1,597 @@
 <!doctype html>
-<html>
+<html lang="zh">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
-<title>LION HEART創意設計工作室</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
-<!--CSS開始-->
-<link rel="stylesheet" href="css/style.css" class="css">
-<link rel="stylesheet" href="css/animate.css" class="css">
-<style type="text/css" id="parrottalks-notetaker-style">      html > body.evernote_clearly__before_visible #parrottalks-notetaker > iframe,      html > body.clearlyBeforeVisible #parrottalks-notetaker > iframe:not(#evernoteGlobalTools):not(#evernoteOptionsPage):not(#evernoteClearlyArticle) {        visibility: visible !important;      }      .evernote_clearly__before_visible #evernote_clearly__reformat,      .clearlyBeforeVisible #evernoteClearlyArticle {        z-index: 2147483646 !important;      }    </style>
-<style>
-body { overflow-x: hidden; font-family: "Microsoft Yahei";}
-.dowebok { margin: 0 auto;}
-.dowebok ul { list-style-type: none;}
-.dowebok .row { text-align: center;}
-.dowebok .logo { display: inline-block; width:836px; height: 372px; margin:0 auto; vertical-align: top; *display: inline; zoom: 1;}
-.dowebok .word { display: inline-block; width:100%; height:auto; margin:0 auto; vertical-align: top; *display: inline; zoom: 1;}
-</style>
-<!--CSS結束-->
+<title>LIONHEART獅子心創意設計</title>
 	
-<!--JS跳至指定ID開始-->
-<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/001.js"></script>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#home-btn,#menu-home").click(function(){
-  $("html,body").animate({scrollTop:$('#banner').offset().top},750);
-	  return false;
-  });
-	$("#intro-btn,#menu-intro,#drop-down").click(function(){
-  $("html,body").animate({scrollTop:$('#intro').offset().top},750);
-	  return false;
-  });
-	$("#service-btn,#menu-service").click(function(){
-  $("html,body").animate({scrollTop:$('#service').offset().top},750);
-	  return false;
-  });
-	$("#conact-btn,#menu-conact,#ad-btn").click(function(){
-  $("html,body").animate({scrollTop:$('#conact').offset().top},750);
-	  return false;
+<!--Css Link-->
+<link rel="stylesheet" href="css/common.css" class="css">
+<link rel="stylesheet" href="css/pages.css" class="css">
+<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css" media="all">
+<link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+<link href="css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+<!--Css Link-->	
+
+<!--Js-->
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script>
+$(function() {
+  var $win = $(window);
+  var $logo = $('.heder-logo-word');
+  // 当滚动到离顶部50像素时，展示logo其餘hide
+  $win.scroll(function() {
+    if ($win.scrollTop() > 50) {
+      $logo.show();
+    } else {
+      $logo.hide();
+    }
   });
 });
 </script>
-<!--JS跳至指定ID結束-->
-
-
+<!--JS-->
 
 </head>
 
 <body>
-<!--Out開始-->	
 <div class="outline">
-	
-<!--Banner開始-->
-<div class="outline" id="banner">
-<div class="nav-bar-out">
-	<div class="nav-bar">
-	<a href="javascript:void(0)" id="menu-home">Home</a>
-	<a href="javascript:void(0)" id="menu-intro">Introduction</a>
-	<a href="javascript:void(0)" id="menu-service">Service</a>
-	<a href="javascript:void(0)" id="menu-conact">conact</a>
-	</div>
-</div>
+	<!--Header 開始-->
+  <div class="header">
+	  <a href="#portfolio" >
+	  <div id="logo" class="header_logo"><img src="img/logo.png" width="110" height="96" alt=""/></div>
+	  <div class="outblock">
+		<div class="heder-logo-word"><img src="img/logo-word.png" width="4505" height="1130" alt=""/></div>
+		<div class="header_menu">
+			<a class="active" href="index.html" id="menu-home">首頁</a>
+			<a class="" href="javascript:void(0)" id="menu-intro">工作室介紹</a>
+			<a href="javascript:void(0)" id="menu-service">服務項目</a>
+			<a href="javascript:void(0)" id="menu-works">作品</a>
+			<a href="javascript:void(0)" id="menu-conact">聯絡我們</a>
+		</div>  
+		</div>  
+		 
+	  </a>	
+  </div>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu-home,#menu-m-index").click(function(){
+  $("html,body").animate({scrollTop:$('#banner').offset().top},750);
+	  return false;
+  });
+	$("#menu-intro,#menu-m-intro").click(function(){
+  $("html,body").animate({scrollTop:$('#intro').offset().top},750);
+	  return false;
+  });
+	$("#menu-service,#menu-m-service").click(function(){
+  $("html,body").animate({scrollTop:$('#service').offset().top},750);
+	  return false;
+  });
+	$("#menu-conact,#menu-m-conact").click(function(){
+  $("html,body").animate({scrollTop:$('#conact').offset().top},750);
+	  return false;
+  });
+	$("#menu-works,#menu-m-works").click(function(){
+  $("html,body").animate({scrollTop:$('#works').offset().top},750);
+	  return false;
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu-home").click(function(){
+  $("#menu-home").addClass('active');
+  $("#menu-intro").removeClass('active');
+  $("#menu-service").removeClass('active');
+  $("#menu-conact").removeClass('active');
+  $("#menu-works").removeClass('active');
+  });
+	$("#menu-intro").click(function(){
+  $("#menu-intro").addClass('active');
+  $("#menu-home").removeClass('active');
+  $("#menu-service").removeClass('active');
+  $("#menu-conact").removeClass('active');
+  $("#menu-works").removeClass('active');
+  });
+	$("#menu-service").click(function(){
+  $("#menu-service").addClass('active');
+  $("#menu-intro").removeClass('active');
+  $("#menu-home").removeClass('active');
+  $("#menu-conact").removeClass('active');
+  $("#menu-works").removeClass('active');
+  });
+	$("#menu-conact").click(function(){
+  $("#menu-conact").addClass('active');
+  $("#menu-intro").removeClass('active');
+  $("#menu-service").removeClass('active');
+  $("#menu-home").removeClass('active');
+  $("#menu-works").removeClass('active');
+  });
+	$("#menu-works").click(function(){
+  $("#menu-conact").addClass('active');
+  $("#menu-intro").removeClass('active');
+  $("#menu-service").removeClass('active');
+  $("#menu-home").removeClass('active');
+  $("#menu-conact").removeClass('active');
+  });
+});
+</script>
 
-<div class="main-banner-block">
-	<div class="main-banner-logo">
-	<div class="dowebok">
-		<div class="row">
-			<div class="logo bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;"><img src="img/banner-logo.png" width="836" height="372" alt=""/></div>
-		</div>
-	</div>
-	</div>
 	
-	<a href="javascript:void(0)" class="main-banner-drop" id="drop-down"><img src="img/banner-drop-icon.png" width="70" height="70" alt=""/></a>
-</div>
+	<!--Header 結束-->
+	<!--手機版 header 開始-->
+	<div class="mobile-header">
+		<div class="mobile-header-block" id="header-m">
+			<div id="mobile-header-hb">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="mobile-header-main-block" id="mobile-header-main">
+				<a href="javascript:void(0)" id="menu-m-index">首頁</a>
+				<a href="javascript:void(0)" id="menu-m-intro">工作室介紹</a>
+				<a href="javascript:void(0)" id="menu-m-service">服務項目</a>
+				<a href="javascript:void(0)" id="menu-m-works">作品</a>
+				<a href="javascript:void(0)" id="menu-m-conact">聯絡我們</a>
+		
+		</div>
+		<script type="text/javascript">
+$(document).ready(function(){
+  $("#mobile-header-hb").click(function(){
+    $("#mobile-header-main").toggle(500);}
+  );
+});
+</script>
+	</div>
+	<!--手機版 header 結束-->
 
-</div>
-<!--Banner結束-->
+	<!--滿版輪播圖區 開始-->
+	<div class="htmleaf-container" id="banner">
+		<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+	            <!--選單-->
+	            <ol class="carousel-indicators">
+	                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+	                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+	                <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+	            </ol>
+				<!--選單-->
+
+	            <!-- Wrapper For Slides -->
+	            <div class="carousel-inner" role="listbox">
+
+	                <!-- Third Slide -->
+	                <div class="item active">
+
+	                    <!-- Slide Background -->
+	                    <img src="img/main_banner_1.png" alt="Bootstrap Touch Slider"  class="slide-image"/>
+	                    <div class="bs-slider-overlay"></div>
+
+	                    <div class="container">
+	                        <div class="row">
+	                            <!-- Slide Text Layer -->
+	                            <div class="slide-text slide_style_center">
+									<div class="sing-word banner"  data-animation="animated zoomInDown"></div>
+									<div class="mainbanner_title" data-animation="animated fadeInLeft">設計無界 <span class="media-none upset">｜</span> <br class="media-none">始於初心</div>
+	                               <div class="mainbanner_sub"  data-animation="animated fadeInRight">Lion Heart <br class="media-none">獅子新創意設計工作室</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- End of Slide -->
+					
+					<!-- Third Slide -->
+	                <div class="item">
+
+	                    <!-- Slide Background -->
+	                    <img src="img/main_banner_2.jpeg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+	                    <div class="bs-slider-overlay"></div>
+
+	                    <div class="container">
+	                        <div class="row">
+	                            <!-- Slide Text Layer -->
+	                            <div class="slide-text slide_style_center">
+									<div class="sing-word banner"  data-animation="animated zoomInDown"></div>
+									<div class="mainbanner_title" data-animation="animated fadeInLeft">韻設高貴 <span class="media-none upset">｜</span> <br class="media-none">睿計細膩</div>
+	                               <div class="mainbanner_sub"  data-animation="animated fadeInRight">Lion Heart <br class="media-none">獅子新創意設計工作室</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- End of Slide -->
+					
+					<!-- Third Slide -->
+	                <div class="item">
+
+	                    <!-- Slide Background -->
+	                    <img src="img/main_banner_3.jpeg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+	                    <div class="bs-slider-overlay"></div>
+
+	                    <div class="container">
+	                        <div class="row">
+	                            <!-- Slide Text Layer -->
+	                            <div class="slide-text slide_style_center">
+									<div class="sing-word banner"  data-animation="animated zoomInDown"></div>
+									<div class="mainbanner_title" data-animation="animated fadeInLeft">無限創新 <span class="media-none upset">｜</span> <br class="media-none">值得等待</div>
+	                               <div class="mainbanner_sub"  data-animation="animated fadeInRight">Lion Heart <br class="media-none">獅子心創意設計工作室</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- End of Slide -->
+					
+					
+
+	               
+
+
+
+	            </div><!-- End of Wrapper For Slides -->
+
+	            <!-- Left Control -->
+	            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+	                <span class="fa fa-angle-left" aria-hidden="true"></span>
+	                <span class="sr-only">Previous</span>
+	            </a>
+
+	            <!-- Right Control -->
+	            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+	                <span class="fa fa-angle-right" aria-hidden="true"></span>
+	                <span class="sr-only">Next</span>
+	            </a>
+
+	        </div> <!-- End  bootstrap-touch-slider Slider -->
+	</div>
 	
-<!--介紹 開始-->
-<div class="outline" id="intro">
-	<div class="intro-bg">
-		<div class="outarea">
-			<div class="main-tittle">
-				<div class="dowebok">
-				<div class="row">
-					<div class="intro-tittle bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;animation-delay:1.5s;">
-					<img src="img/intro-tittle.png" width="421" height="158" alt=""/>
-					</div>
-				</div>
-				</div>
+	<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="http://cdn.bootcss.com/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+       <script src="js/bootstrap-touch-slider.js"></script>
+       <script type="text/javascript">
+            $('#bootstrap-touch-slider').bsTouchSlider();
+        </script>
+	<!--滿版輪播圖區 結束-->
+	
+	<!--intro 開始-->
+	<div class="outline" id="intro">
+		<div class="outblock">
+			<div class="intro_block">
+				<div class="sing-word intro"></div>
+				<div class="intro_title">關於我們 | ABOUTS</div>
+				<div class="intro_word">在這設計藍海中，如綠野仙蹤裡膽小獅般，尋找需偌大勇氣與承擔面對挑戰<br>獅子心懷有自由自在的靈魂乘風破浪，秉持海納百川大無畏精神<br>探索並壯大內心，不畏懼面對任何問題<br>獅子初心 ｜ 無所畏懼</div>
 			</div>
-			<div class="dowebok">
-				<div class="row">
-					<div class="word bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;animation-delay:1.5s;">
-					<div class="intro-word"><p>在這設計藍海中，如綠野仙蹤裡膽小獅般，尋找需偌大勇氣與承擔面對挑戰</p>獅子心懷有自由自在的靈魂乘風破浪，秉持海納百川大無畏精神<p>探索並壯大內心，不畏懼面對任何問題</p><p>獅子初心&nbsp;&nbsp;&nbsp;&nbsp;無所畏懼</p></div>
-					</div>
-				</div>
-			</div>
-			
 		</div>
 	</div>
-</div>
-<!--介紹 結束-->
-	
-<!--中間廣告開始-->	
-<div class="outline">
-	<div class="spreated-banner">
-		<div class="outarea">
-			<div class="dowebok">
-				<div class="row">
-					<div class="word bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:1.5s;">
-					<div class="spreated-word">Looking For Someone to Help You ?<br>Try to Conact us</div>
-					</div>
-					<div class="wow bounceInDown bg-purple animated" style="visibility: visible; animation-name: bounceInDown;animation-delay: 2s;"><a class="spreated-btn" href="javascript:void(0)" id="ad-btn">Contact Us</a></div>
-				</div>
+	<!--intro 結束-->
+	<!--廣告 開始-->
+	<div class="outline adv_bg">
+		<div class="outblock">
+			<div class="adv_main">
+				<div>網頁建置 ｜ UI/UX設計 ｜平面設計 ｜ 商品攝影</div>
+				<span>視覺設計|商業設計|網路行銷|平面文宣</span>
 			</div>
-			
-			
 		</div>
-	</div>	
-</div>
-<!--中間廣告結束-->
+	</div>
+	<!--廣告 結束-->
 	
-<!--服務項目開始-->
-<div class="outline" id="service">
-	<div class="service-bg">
-		<div class="outarea">
-			<div class="main-tittle">
-				<div class="dowebok">
-				<div class="row">
-					<div class="bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;animation-delay:3s;">
-					<img src="img/service-tittle.png" width="857" height="158" alt=""/>
-					</div>
-				</div>
-				</div>
-			</div>
-		  <div class="service-items-block">
-			<div class="dowebok">
-				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:3.5s;">
+	<!--服務項目 開始-->
+	<div class="outline stylist_bg" id="service">
+		<div class="outblock">
+			<div class="intro_block">
+				<div class="outblock"></div>
+				<div class="sing-word intro"></div>
+				<div class="intro_title">服務項目 | SERVICE</div>
+				<div class="intro_word">我們的服務多樣且專業，<br class="media-none">讓我們為您創造新的人生，用我們設計引領您</div>
+				<div class="service-items-block">
 					<div class="service-items-icon"><img src="img/service-graphic-icon.png" width="89" height="90" alt=""/></div>
 					<div class="service-items-tittle">平面設計</div>
 					<div>Graphic Design</div>
 					<div>CIS企劃書、平面廣告、包裝設計<br>宣傳製作物、繪圖插畫</div>
 				</div>
-				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:3.7s;">
+				<div class="service-items-block">
 					<div class="service-items-icon"><img src="img/service-web-icon.png" width="82" height="90" alt=""/></div>
 					<div class="service-items-tittle">網頁設計</div>
 					<div>Website Design</div>
 					<div>視覺設計、前端程式、特效刻寫<br>RWD網頁設計、串接資料、SEO設計<br>後端功能手刻、後台建置、網站建置配置</div>
 				</div>
-				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:3.9s;">
+				<div class="service-items-block right-no-margin">
 					<div class="service-items-icon"><img src="img/service-uiux-icon.png" width="74" height="90" alt=""/></div>
 					<div class="service-items-tittle">UI/UX設計</div>
 					<div>UI/UX Design</div>
 					<div>GUI/UX設計、Flow流程<br>Wirefram展示、Prototype展示</div>
 				</div>
-			</div>
-			<div class="dowebok">
-				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:4.1s;">
+
+				<div class="service-items-block">
 					<div class="service-items-icon"><img src="img/service-market-icon.png" width="87" height="90" alt=""/></div>
 					<div class="service-items-tittle">行銷宣傳</div>
 					<div>Marketing Publicity</div>
 					<div>網路宣傳、臉書粉絲團<br>公關宣傳、活動策劃、品牌經營</div>
 				</div>
-				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:4.3s;">
+				<div class="service-items-block">
 					<div class="service-items-icon"><img src="img/service-video-icon.png" width="83" height="90" alt=""/></div>
 					<div class="service-items-tittle">影片後製</div>
 					<div>Video Effect</div>
 					<div>影片剪接、影片後製、開頭動畫製作<br>字幕特效、腳本發想</div>
 				</div>
-				<div class="row bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;animation-delay:4.5s;">
+				<div class="service-items-block right-no-margin">
 					<div class="service-items-icon"><img src="img/service-project-icon.png" width="76" height="90" alt=""/></div>
 					<div class="service-items-tittle">專案規劃</div>
 					<div>Project Planning</div>
 					<div>專案時間規劃、程序規劃<br>統整管理</div>
 				</div>
+				
+				
+	  		</div>
+	</div>
+	<!--服務項目 結束-->
+		
+
+<!--廣告 開始-->
+	<div class="outline adv_bg second">
+		<div class="outblock">
+			<div class="adv_main ">
+				<div>客製化 ｜ 模板化 ｜價格實惠 ｜ 質感超群</div>
+				<span>CIS設計|SinglePage|SEO設計|包裝設計</span>
 			</div>
-			  
-			  
-			  
-		  </div>
 		</div>
 	</div>
-</div>
-<!--服務項目結束-->
-	
-<!--聯絡我們開始-->
-<div class="outline" id="conact">
-	<div class="conact-bg">
-		<div class="outarea">
-			<div class="main-tittle"><img src="img/conact-tittle.png" width="657" height="158" alt=""/></div>
-			<div class="conact-main-block">
+	<!--廣告 結束-->
+
+	<!--personal-works 開始-->
+	<div class="outline" id="works">
+		<div class="outblock">
+			<div class="personal_block">
+				<div class="sing-word intro"></div>
+				<div class="intro_title">作品集| THE WORKS</div>
+			</div>
+			<!--section-->
+			<div class="personal_works_block">
+				<a class="control__item  control--effects">
+						<input class="control__radio control__btn" type="radio" name="grid-type" value="grid--type-b" id="control-grid-b" data-fx="Hapi">
+						<label class="control__label" for="control-grid-b">網頁設計</label>
+				</a>
+				<a class="control control__item control--effects">
+						<input class="control__radio  control__btn" type="radio" name="grid-type" value="grid--type-c" id="control-grid-c" data-fx="Hapi">
+						<label class="control__label" for="control-grid-c"  >UI/UX</label>
+				</a>
+				<a class="control control__item control--effects">
+						<input class="control__radio  control__btn" type="radio" name="grid-type" value="grid--type-d" id="control-grid-d" data-fx="Hapi">
+						<label class="control__label" for="control-grid-d"  >BANNER</label>
+				</a>
+				<a class="control control__item control--effects">
+						<input class="control__radio  control__btn" type="radio" name="grid-type" value="grid--type-e" id="control-grid-e" data-fx="Hapi">
+						<label class="control__label" for="control-grid-e"  >平面設計</label>
+				</a>
+			</div>
+			<!--section-->
+			
+			<!--works-->
+			<div class="content content--center">
+				
+				<!--網頁-->
+				<div class="grid grid--type-b">
+					<div class="grid__sizer"></div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/1.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/2.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/3.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/4.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/5.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/6.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/7.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/8.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/9.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/10.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/11.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/12.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/13.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/14.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/15.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/16.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/17.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/18.jpg" alt="Some image" /></a>
+					</div>
+				</div>
+				<!--網頁-->
+				
+				<!--APP-->
+				<div class="grid grid--type-c">
+					<div class="grid__sizer"></div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/19.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/20.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/21.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/22.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/23.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/24.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/25.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/26.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/27.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/28.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/29.jpg" alt="Some image" /></a>
+					</div>
+				</div>
+				<!--APP-->
+				
+				<!--Banner-->
+				<div class="grid grid--type-d">
+					<div class="grid__sizer"></div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/30.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/31.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/32.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/33.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/34.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/35.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/36.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/37.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/38.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/39.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/40.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/41.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/42.jpg" alt="Some image" /></a>
+					</div>
+				</div>
+				<!--Banner-->
+				<!--Graphic-->
+				<div class="grid grid--type-e">
+					<div class="grid__sizer"></div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/43.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/44.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/45.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/46.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/47.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/48.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/49.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/50.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/51.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/52.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/53.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/54.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/55.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/56.jpg" alt="Some image" /></a>
+					</div>
+					<div class="grid__item">
+						<a class="grid__link" href="javascript:void(0)"><img class="grid__img" src="img/works/57.jpg" alt="Some image" /></a>
+					</div>
+				</div>
+				<!--Graphic-->
+			</div>
+			<!--works-->
+			
+			
+			<script src="js/imagesloaded.pkgd.min.js"></script>
+			<script src="js/masonry.pkgd.min.js"></script>
+			<script src="js/anime.min.js"></script>
+			<script src="js/main.js"></script>
+			
+			
+		</div>
+	</div>
+	<!--personal-works 結束-->
+		
+	<!--聯絡 開始-->
+	<div class="outline" id="conact">
+		<div class="outblock">
+			<div class="intro_block">
+				<div>
+				<div class="sing-word intro"></div>
+				<div class="intro_title">聯絡我們 | Conact</div>
+				<div class="intro_word">有任何需求或疑問歡迎聯絡我們，填寫以下表單，我們將儘速回覆您</div>
+				</div>
+				<div class="conact-main-block">
 				<div>
 					<div class="conact-main-input-block">
 						<form action="https://formspree.io/lionheartcds@gmail.com" method="POST">
@@ -202,58 +601,36 @@ $(document).ready(function(){
 
 						<textarea class="text" type="text" name="text" onBlur="if(this.value=='') if(this.style.backgroundColor='FFFFFF')this.value='請輸入內容...'" onFocus="if(this.value.indexOf('請')!=-1) if(this.style.backgroundColor='FFFCE3')this.value=''">請輸入內容...</textarea>
 							
-						<input class="conact-main-info-btn" type="submit" value="Send" onClick="alert('發送信件成功,請靜待我們的回覆,或是撥打我們的聯絡專線,謝謝您！')">
+						<input class="conact-main-info-btn" type="submit" value="送出" onClick="alert('發送信件成功,請靜待我們的回覆,或是撥打我們的聯絡專線,謝謝您！')">
 						</form>
-					</div>
-					<div class="conact-main-info-block">
-			    	  <img src="img/conact-info-logo.png" width="259" height="65" alt=""/>
-						<div class="conact-main-info-word">
-							<img src="img/conact-info-email.png" width="30" height="20" alt=""/>
-							<span class="email">lionheartcds@gmail.com</span>
-						</div>
-						<div class="conact-main-info-word">
-							<img src="img/conact-info-tel.png" width="30" height="27" alt=""/>
-							<span class="phone">09-3290-3351/09-8930-0276</span>
-						</div>
-						
-						
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-<!--聯絡我們結束-->
-	
-<!--FOOTER開始-->
-<div class="outline">
-	<div class="footer-bg">
-		<div class="outarea">
-			<div class="footer-menu">
-				<a href="javascript:void(0)" id="home-btn">Home</a>
-				<a href="javascript:void(0)" id="intro-btn">Introduction</a>
-				<a href="javascript:void(0)" id="service-btn">Service</a>
-				<a href="javascript:void(0)" id="conact-btn">Conact</a>
 			</div>
 		</div>
 	</div>
+	<!--聯絡 結束-->
+		
+	<!--footer 開始-->
+	<div class="footer">
+		<div class="outblock">
+			<div class="footer_copy">©2020 The Queenallistuio Company, all rights reserved</div>
+			<div class="footer-social-block">
+			<a href="" class="footer_social"><img src="img/ig-icon.png" width="27" height="45" alt=""/><div class="word">0932903351</div></a>
+			<a href="" class="footer_social"><img src="img/line-icon.png" width="27" height="45" alt=""/><div class="word">dyan0309</div></a>
+			</div>
+	  </div>
+	</div>
+	<!--footer 結束-->
+	
+	
+	
+	
+	
+	
+	
+
 </div>
-<!--FOOTER結束-->
-
-<!--CopyRight開始-->
-<div class="copy-right">Copyright © 2019 LionHeartCDS Inc. All rights reserved</div>
-<!--CopyRight結束-->
-
-</div>
-<!--Out結束-->
-
-<!--JS滾動後開始特效開始-->
-<script src="dist/wow.min.js"></script>
-<script>
-if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-	new WOW().init();
-};
-</script>
-<!--JS滾動後開始特效開始-->
 </body>
+	
 </html>
